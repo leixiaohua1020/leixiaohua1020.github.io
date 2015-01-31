@@ -45,7 +45,17 @@ echo "leixiaohua1020@126.com"
 echo "http://blog.csdn.net/leixiaohua1020"
 echo "============================================="
 
+originstr="github"
+#3 kinds of origins:
+githubstr="github"
+sourceforgestr="sourceforge"
+oscstr="osc"
+
 #Git Clone
+#Github
+#http://leixiaohua1020.github.com/
+if [ "$originstr" = "$githubstr" ]
+then
 git clone https://github.com/leixiaohua1020/simplest_ffmpeg_player.git simplest_ffmpeg_player
 git clone https://github.com/leixiaohua1020/simplest_ffmpeg_audio_player.git simplest_ffmpeg_audio_player
 git clone https://github.com/leixiaohua1020/simplest_ffmpeg_picture_encoder.git simplest_ffmpeg_picture_encoder
@@ -57,3 +67,33 @@ git clone https://github.com/leixiaohua1020/simplest_ffmpeg_device.git simplest_
 git clone https://github.com/leixiaohua1020/simplest_ffmpeg_format.git simplest_ffmpeg_format
 git clone https://github.com/leixiaohua1020/simplest_ffmpeg_video_filter.git simplest_ffmpeg_video_filter
 git clone https://github.com/leixiaohua1020/simplest_ffmpeg_swscale.git simplest_ffmpeg_swscale
+#SourceForge
+#https://sourceforge.net/u/leixiaohua1020/wiki/
+elif [ "$originstr" = "$sourceforgestr" ]
+then
+git clone git://git.code.sf.net/p/simplestffmpegplayer/code simplest_ffmpeg_player
+git clone git://git.code.sf.net/p/simplestffmpegaudioplayer/code simplest_ffmpeg_audio_player
+git clone git://git.code.sf.net/p/simplestffmpegpictureencoder/code simplest_ffmpeg_picture_encoder
+git clone git://git.code.sf.net/p/simplestffmpegvideoencoder/code simplest_ffmpeg_video_encoder
+git clone git://git.code.sf.net/p/simplestffmpegaudioencoder/code simplest_ffmpeg_audio_encoder
+git clone git://git.code.sf.net/p/simplestffmpegstreamer/code simplest_ffmpeg_streamer
+git clone git://git.code.sf.net/p/simplestffmpegmemhandler/code simplest_ffmpeg_mem_handler
+git clone git://git.code.sf.net/p/simplestffmpegdevice/code simplest_ffmpeg_device
+git clone git://git.code.sf.net/p/simplestffmpegformat/code simplest_ffmpeg_format
+git clone git://git.code.sf.net/p/simplestffmpegvideofilter/code simplest_ffmpeg_video_filter
+git clone git://git.code.sf.net/p/simplestffmpegswscale/code simplest_ffmpeg_swscale
+#OSC
+#http://git.oschina.net/leixiaohua1020
+else
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_player.git simplest_ffmpeg_player
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_audio_player.git simplest_ffmpeg_audio_player
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_picture_encoder.git simplest_ffmpeg_picture_encoder
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_video_encoder.git simplest_ffmpeg_video_encoder
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_audio_encoder.git simplest_ffmpeg_audio_encoder
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_streamer.git simplest_ffmpeg_streamer
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_mem_handler.git simplest_ffmpeg_mem_handler
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_device.git simplest_ffmpeg_device
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_format.git simplest_ffmpeg_format
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_video_filter.git simplest_ffmpeg_video_filter
+git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_swscale.git simplest_ffmpeg_swscale
+fi

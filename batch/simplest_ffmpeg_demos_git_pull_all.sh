@@ -45,49 +45,51 @@ echo "leixiaohua1020@126.com"
 echo "http://blog.csdn.net/leixiaohua1020"
 echo "============================================="
 
+remotestr="github"
+
 #Git Pull
 cd simplest_ffmpeg_player
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_audio_player
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_picture_encoder
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_video_encoder
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_audio_encoder
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_streamer
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_mem_handler
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_device
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_format
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_video_filter
-git pull
+git pull $remotestr
 cd ..
 
 cd simplest_ffmpeg_swscale
-git pull
+git pull $remotestr
 cd ..
 
 

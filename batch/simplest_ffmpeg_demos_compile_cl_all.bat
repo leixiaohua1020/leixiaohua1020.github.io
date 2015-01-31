@@ -105,7 +105,13 @@
 ::    simplest_ffmpeg_mem_transcoder:  Video Converter that convert video data in memory.
 ::=====================================================================================
 
-
+echo "---------------------------------------------"
+echo "multimedia projects examples list ---- git push all"
+echo "Lei Xiaohua"
+echo "Communication University of China / Digital TV Technology"
+echo "leixiaohua1020@126.com"
+echo "http://blog.csdn.net/leixiaohua1020"
+echo "---------------------------------------------"
 ::=====================================================================================
 echo " "
 echo "Compile simplest_ffmpeg_player..."

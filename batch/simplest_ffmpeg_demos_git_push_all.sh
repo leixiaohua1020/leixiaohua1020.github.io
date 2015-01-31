@@ -45,69 +45,73 @@ echo "leixiaohua1020@126.com"
 echo "http://blog.csdn.net/leixiaohua1020"
 echo "============================================="
 
+#vars
+commitstr="fix"
+remotestr="github"
+
 #git push
 cd simplest_ffmpeg_player
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_audio_player
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_picture_encoder
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_video_encoder
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_audio_encoder
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_streamer
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_mem_handler
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_device
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_format
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_video_filter
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
 
 cd simplest_ffmpeg_swscale
 git add .
-git commit -m "compile cmd"
-git push github
+git commit -m $commitstr
+git push $remotestr
 cd ..
