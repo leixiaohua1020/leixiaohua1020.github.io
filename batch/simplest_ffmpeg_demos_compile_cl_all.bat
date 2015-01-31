@@ -107,8 +107,8 @@
 
 
 ::=====================================================================================
-@set INCLUDE =include;%INCLUDE%
-@set LIB =lib;%LIB%
+echo " "
+echo "Compile simplest_ffmpeg_player..."
 cd simplest_ffmpeg_player
 cd simplest_ffmpeg_player
 call compile_cl.bat
@@ -122,6 +122,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_audio_player..."
 cd simplest_ffmpeg_audio_player
 cd simplest_ffmpeg_audio_player
 call compile_cl.bat
@@ -129,6 +131,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_picture_encoder..."
 cd simplest_ffmpeg_picture_encoder
 cd simplest_ffmpeg_picture_encoder
 call compile_cl.bat
@@ -136,6 +140,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_video_encoder..."
 cd simplest_ffmpeg_video_encoder
 cd simplest_ffmpeg_video_encoder
 call compile_cl.bat
@@ -146,6 +152,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_audio_encoder..."
 cd simplest_ffmpeg_audio_encoder
 cd simplest_ffmpeg_audio_encoder
 call compile_cl.bat
@@ -153,6 +161,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_streamer..."
 cd simplest_ffmpeg_streamer
 cd simplest_ffmpeg_streamer
 call compile_cl.bat
@@ -160,6 +170,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_mem_handler..."
 cd simplest_ffmpeg_mem_handler
 cd simplest_ffmpeg_mem_player
 call compile_cl.bat
@@ -170,6 +182,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_device..."
 cd simplest_ffmpeg_device
 cd simplest_ffmpeg_grabdesktop
 call compile_cl.bat
@@ -180,6 +194,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_format..."
 cd simplest_ffmpeg_format
 cd simplest_ffmpeg_demuxer
 call compile_cl.bat
@@ -196,6 +212,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_video_filter..."
 cd simplest_ffmpeg_video_filter
 cd simplest_ffmpeg_video_filter
 call compile_cl.bat
@@ -203,6 +221,8 @@ cd ..
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_swscale..."
 cd simplest_ffmpeg_swscale
 cd simplest_ffmpeg_swscale
 call compile_cl.bat

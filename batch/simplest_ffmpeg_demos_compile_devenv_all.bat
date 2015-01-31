@@ -105,72 +105,94 @@
 ::    simplest_ffmpeg_mem_transcoder:  Video Converter that convert video data in memory.
 ::=====================================================================================
 
+set logfile=compile_log.txt
 ::VS2010 Environment
 call "D:\Program Files\Microsoft Visual Studio 10.0\VC\vcvarsall.bat"
 ::=====================================================================================
+echo "Compile simplest_ffmpeg_player..."
 cd simplest_ffmpeg_player
-devenv.exe simplest_ffmpeg_player.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_player.sln /rebuild Release
+devenv.exe simplest_ffmpeg_player2.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_player2.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_audio_player..."
 cd simplest_ffmpeg_audio_player
-devenv.exe simplest_ffmpeg_audio_player.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_audio_player.sln /rebuild Release
+devenv.exe simplest_ffmpeg_audio_player.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_audio_player.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_picture_encoder..."
 cd simplest_ffmpeg_picture_encoder
-devenv.exe simplest_ffmpeg_picture_encoder.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_picture_encoder.sln /rebuild Release
+devenv.exe simplest_ffmpeg_picture_encoder.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_picture_encoder.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_video_encoder..."
 cd simplest_ffmpeg_video_encoder
-devenv.exe simplest_ffmpeg_video_encoder.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_video_encoder.sln /rebuild Release
+devenv.exe simplest_ffmpeg_video_encoder.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_video_encoder.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_audio_encoder..."
 cd simplest_ffmpeg_audio_encoder
-devenv.exe simplest_ffmpeg_audio_encoder.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_audio_encoder.sln /rebuild Release
+devenv.exe simplest_ffmpeg_audio_encoder.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_audio_encoder.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_streamer..."
 cd simplest_ffmpeg_streamer
-devenv.exe simplest_ffmpeg_streamer.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_streamer.sln /rebuild Release
+devenv.exe simplest_ffmpeg_streamer.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_streamer.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_mem_handler..."
 cd simplest_ffmpeg_mem_handler
-devenv.exe simplest_ffmpeg_mem_handler.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_mem_handler.sln /rebuild Release
+devenv.exe simplest_ffmpeg_mem_handler.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_mem_handler.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_device..."
 cd simplest_ffmpeg_device
-devenv.exe simplest_ffmpeg_device.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_device.sln /rebuild Release
+devenv.exe simplest_ffmpeg_device.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_device.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_format..."
 cd simplest_ffmpeg_format
-devenv.exe simplest_ffmpeg_format.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_format.sln /rebuild Release
+devenv.exe simplest_ffmpeg_format.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_format.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_video_filter..."
 cd simplest_ffmpeg_video_filter
-devenv.exe simplest_ffmpeg_video_filter.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_video_filter.sln /rebuild Release
+devenv.exe simplest_ffmpeg_video_filter.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_video_filter.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
+echo " "
+echo "Compile simplest_ffmpeg_swscale..."
 cd simplest_ffmpeg_swscale
-devenv.exe simplest_ffmpeg_swscale.sln /rebuild Debug
-devenv.exe simplest_ffmpeg_swscale.sln /rebuild Release
+devenv.exe simplest_ffmpeg_swscale.sln /rebuild Debug /Out %logfile%
+devenv.exe simplest_ffmpeg_swscale.sln /rebuild Release /Out %logfile%
 cd ..
 
 ::=====================================================================================
