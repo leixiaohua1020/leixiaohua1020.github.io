@@ -104,137 +104,137 @@
 ::    simplest_ffmpeg_mem_player:      Video Player that play video data in memory.
 ::    simplest_ffmpeg_mem_transcoder:  Video Converter that convert video data in memory.
 ::=====================================================================================
-
-echo "---------------------------------------------"
-echo "multimedia projects examples list ---- git push all"
-echo "Lei Xiaohua"
-echo "Communication University of China / Digital TV Technology"
-echo "leixiaohua1020@126.com"
-echo "http://blog.csdn.net/leixiaohua1020"
-echo "---------------------------------------------"
+@echo off
+echo ---------------------------------------------
+echo simplest ffmpeg demos list ---- CL compile all
+echo Lei Xiaohua
+echo Communication University of China / Digital TV Technology
+echo leixiaohua1020@126.com
+echo http://blog.csdn.net/leixiaohua1020
+echo ---------------------------------------------
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_player..."
+echo.
+echo Compile simplest_ffmpeg_player...
 cd simplest_ffmpeg_player
 cd simplest_ffmpeg_player
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_ffmpeg_player_su
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_ffmpeg_decoder_pure
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_audio_player..."
+echo.
+echo Compile simplest_ffmpeg_audio_player...
 cd simplest_ffmpeg_audio_player
 cd simplest_ffmpeg_audio_player
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_picture_encoder..."
+echo.
+echo Compile simplest_ffmpeg_picture_encoder...
 cd simplest_ffmpeg_picture_encoder
 cd simplest_ffmpeg_picture_encoder
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_video_encoder..."
+echo.
+echo Compile simplest_ffmpeg_video_encoder...
 cd simplest_ffmpeg_video_encoder
 cd simplest_ffmpeg_video_encoder
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_ffmpeg_video_encoder_pure
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_audio_encoder..."
+echo.
+echo Compile simplest_ffmpeg_audio_encoder...
 cd simplest_ffmpeg_audio_encoder
 cd simplest_ffmpeg_audio_encoder
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_streamer..."
+echo.
+echo Compile simplest_ffmpeg_streamer...
 cd simplest_ffmpeg_streamer
 cd simplest_ffmpeg_streamer
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_mem_handler..."
+echo.
+echo Compile simplest_ffmpeg_mem_handler...
 cd simplest_ffmpeg_mem_handler
 cd simplest_ffmpeg_mem_player
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_ffmpeg_mem_transcoder
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_device..."
+echo.
+echo Compile simplest_ffmpeg_device...
 cd simplest_ffmpeg_device
 cd simplest_ffmpeg_grabdesktop
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_ffmpeg_readcamera
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_format..."
+echo.
+echo Compile simplest_ffmpeg_format...
 cd simplest_ffmpeg_format
 cd simplest_ffmpeg_demuxer
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_ffmpeg_demuxer_simple
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_ffmpeg_muxer
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_ffmpeg_remuxer
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_video_filter..."
+echo.
+echo Compile simplest_ffmpeg_video_filter...
 cd simplest_ffmpeg_video_filter
 cd simplest_ffmpeg_video_filter
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 
 ::=====================================================================================
-echo " "
-echo "Compile simplest_ffmpeg_swscale..."
+echo.
+echo Compile simplest_ffmpeg_swscale...
 cd simplest_ffmpeg_swscale
 cd simplest_ffmpeg_swscale
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd simplest_pic_gen
-call compile_cl.bat
+start /wait compile_cl.bat
 cd ..
 cd ..
 

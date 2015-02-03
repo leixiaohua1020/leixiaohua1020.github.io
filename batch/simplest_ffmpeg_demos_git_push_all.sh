@@ -48,6 +48,8 @@ echo "============================================="
 #vars
 commitstr="fix"
 remotestr="github"
+#remotestr="osc"
+#remotestr="origin"
 
 #git push
 cd simplest_ffmpeg_player

@@ -32,7 +32,8 @@ echo "Communication University of China / Digital TV Technology"
 echo "leixiaohua1020@126.com"
 echo "http://blog.csdn.net/leixiaohua1020"
 echo "============================================="
-remotestr="github"
+#remotestr="github"
+remotestr=""
 
 #Git Pull
 cd simplest_media_play
