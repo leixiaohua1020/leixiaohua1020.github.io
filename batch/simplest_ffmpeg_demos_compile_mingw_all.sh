@@ -1,6 +1,6 @@
 #! /bin/sh
-#最简单的基于FFmpeg示例程序合集 ---- GCC批量编译
-#simplest ffmpeg demos list ---- GCC compile all
+#最简单的基于FFmpeg示例程序合集 ---- g++批量编译
+#simplest ffmpeg demos list ---- g++ compile all
 #
 #雷霄骅 Lei Xiaohua
 #leixiaohua1020@126.com
@@ -9,7 +9,7 @@
 #http://blog.csdn.net/leixiaohua1020
 #
 #该脚本用于批量编译[最简单的基于FFmpeg的示例程序合集]的代码。
-#使用GCC作为编译器
+#使用g++作为编译器
 #[最简单的基于FFmpeg的示例程序合集]目前包含下列项目: 
 #-------------------------------------------------------------------------------------
 #  *simplest ffmpeg player            | 最简单的基于FFMPEG的视频播放器
@@ -59,7 +59,7 @@
 #
 #
 #This Batch file is used to compile all the source code of 
-#[simplest ffmpeg demos list]. It uses GCC as compiler.
+#[simplest ffmpeg demos list]. It uses g++ as compiler.
 #[simplest ffmpeg demos list] contains following projects:
 #-------------------------------------------------------------------------------------
 #  *simplest ffmpeg player
@@ -107,24 +107,25 @@
 #=====================================================================================
 
 echo "============================================="
-echo "simplest ffmpeg demos list ---- GCC compile all"
+echo "simplest ffmpeg demos list ---- g++ compile all"
 echo "Lei Xiaohua"
 echo "Communication University of China / Digital TV Technology"
 echo "leixiaohua1020@126.com"
 echo "http://blog.csdn.net/leixiaohua1020"
 echo "============================================="
 #=====================================================================================
+
 echo ""
 echo "Compile simplest_ffmpeg_player..."
 cd simplest_ffmpeg_player
 cd simplest_ffmpeg_player
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_ffmpeg_player_su
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_ffmpeg_decoder_pure
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -133,7 +134,7 @@ echo ""
 echo "Compile simplest_ffmpeg_audio_player..."
 cd simplest_ffmpeg_audio_player
 cd simplest_ffmpeg_audio_player
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -142,7 +143,7 @@ echo ""
 echo "Compile simplest_ffmpeg_picture_encoder..."
 cd simplest_ffmpeg_picture_encoder
 cd simplest_ffmpeg_picture_encoder
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -151,10 +152,10 @@ echo ""
 echo "Compile simplest_ffmpeg_video_encoder..."
 cd simplest_ffmpeg_video_encoder
 cd simplest_ffmpeg_video_encoder
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_ffmpeg_video_encoder_pure
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -163,7 +164,7 @@ echo ""
 echo "Compile simplest_ffmpeg_audio_encoder..."
 cd simplest_ffmpeg_audio_encoder
 cd simplest_ffmpeg_audio_encoder
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -172,7 +173,7 @@ echo ""
 echo "Compile simplest_ffmpeg_streamer..."
 cd simplest_ffmpeg_streamer
 cd simplest_ffmpeg_streamer
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -181,10 +182,10 @@ echo ""
 echo "Compile simplest_ffmpeg_mem_handler..."
 cd simplest_ffmpeg_mem_handler
 cd simplest_ffmpeg_mem_player
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_ffmpeg_mem_transcoder
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -193,10 +194,10 @@ echo ""
 echo "Compile simplest_ffmpeg_device..."
 cd simplest_ffmpeg_device
 cd simplest_ffmpeg_grabdesktop
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_ffmpeg_readcamera
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -205,16 +206,16 @@ echo ""
 echo "Compile simplest_ffmpeg_format..."
 cd simplest_ffmpeg_format
 cd simplest_ffmpeg_demuxer
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_ffmpeg_demuxer_simple
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_ffmpeg_muxer
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_ffmpeg_remuxer
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -223,7 +224,7 @@ echo ""
 echo "Compile simplest_ffmpeg_video_filter..."
 cd simplest_ffmpeg_video_filter
 cd simplest_ffmpeg_video_filter
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
@@ -232,10 +233,10 @@ echo ""
 echo "Compile simplest_ffmpeg_swscale..."
 cd simplest_ffmpeg_swscale
 cd simplest_ffmpeg_swscale
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd simplest_pic_gen
-sh compile_gcc.sh
+sh compile_mingw.sh
 cd ..
 cd ..
 
