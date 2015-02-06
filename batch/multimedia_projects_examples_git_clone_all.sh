@@ -33,7 +33,7 @@ echo "leixiaohua1020@126.com"
 echo "http://blog.csdn.net/leixiaohua1020"
 echo "============================================="
 
-originstr="github"
+originstr="osc"
 #3 kinds of origins:
 githubstr="github"
 sourceforgestr="sourceforge"
