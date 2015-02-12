@@ -48,6 +48,10 @@ cd simplest_librtmp_example
 git pull $remotestr
 cd ..
 
+cd simplest_libvlc_example
+git pull $remotestr
+cd ..
+
 cd simplest_directshow_example
 git pull $remotestr
 cd ..

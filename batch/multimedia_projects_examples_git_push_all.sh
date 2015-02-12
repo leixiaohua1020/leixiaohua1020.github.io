@@ -35,7 +35,8 @@ echo "============================================="
 
 #vars
 commitstr="fix"
-remotestr="github"
+#remotestr="github"
+remotestr=""
 
 #git push
 cd simplest_media_play

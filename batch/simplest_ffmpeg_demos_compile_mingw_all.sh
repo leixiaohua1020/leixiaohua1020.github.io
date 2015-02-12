@@ -1,6 +1,6 @@
 #! /bin/sh
-#最简单的基于FFmpeg示例程序合集 ---- g++批量编译
-#simplest ffmpeg demos list ---- g++ compile all
+#最简单的基于FFmpeg示例程序合集 ---- MinGW批量编译
+#simplest ffmpeg demos list ---- MinGW compile all
 #
 #雷霄骅 Lei Xiaohua
 #leixiaohua1020@126.com
@@ -9,7 +9,7 @@
 #http://blog.csdn.net/leixiaohua1020
 #
 #该脚本用于批量编译[最简单的基于FFmpeg的示例程序合集]的代码。
-#使用g++作为编译器
+#使用MinGW的g++作为编译器
 #[最简单的基于FFmpeg的示例程序合集]目前包含下列项目: 
 #-------------------------------------------------------------------------------------
 #  *simplest ffmpeg player            | 最简单的基于FFMPEG的视频播放器
@@ -59,7 +59,7 @@
 #
 #
 #This Batch file is used to compile all the source code of 
-#[simplest ffmpeg demos list]. It uses g++ as compiler.
+#[simplest ffmpeg demos list]. It uses MinGW's g++ as compiler.
 #[simplest ffmpeg demos list] contains following projects:
 #-------------------------------------------------------------------------------------
 #  *simplest ffmpeg player
@@ -105,9 +105,62 @@
 #    simplest_ffmpeg_mem_player:      Video Player that play video data in memory.
 #    simplest_ffmpeg_mem_transcoder:  Video Converter that convert video data in memory.
 #=====================================================================================
-
+# Get FFmpeg's Lib in MinGW
+# Input following command in Command Line Window:
+#
+# ~~~~~~~~~~~~~~~~~~[Compile]~~~~~~~~~~~~~~~~~~
+# #(0)Compile FFmpeg Dependencies
+# #Install yasm
+# #Visit yasm official site:http://yasm.tortall.net/, download the yasmXXXX.exe
+# #Change "yasmXXXX.exe" name to "yasm.exe"
+# #Copy yasm.exe to [MinGW Install Folder]/bin/
+# #Install SDL
+# #Visit SDL official site: http://www.libsdl.org/, download source code
+# #cd to source code folder
+# ./configure
+# make
+# make install
+# #Compile libx264
+# #Visit x264 official site: http://www.videolan.org/developers/x264.html, download source code
+# #cd to source code folder
+# ./configure
+# make
+# make install
+# #Compile libfaac 
+# #Visit libfaac official site: http://www.audiocoding.com/faac.html, download source code
+# #cd to source code folder
+# ./configure
+# make
+# make install
+#
+# #(1)Compile FFmpeg
+# #Visit ffmpeg official site: http://ffmpeg.org/, download source code.
+# #or use Git:
+# git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
+# cd ffmpeg
+# ./configure --enable-shared --enable-libfaac --enable-libx264 --enable-gpl --enable-nonfree
+# make
+# make install
+#
+# #(2)Compile SDL2 (Some projects needed)
+# #Visit SDL official site:http://www.libsdl.org/, download source code
+# #cd to source code folder
+# ./configure
+# make
+# make install
+#
+# ~~~~~~~~~~~~~~[Install Directly]~~~~~~~~~~~~~~
+# #Visit ffmpeg Windows Build site: http://ffmpeg.zeranoe.com/, download windows shared/dev version.
+# #Create Folder named "local" in [Msys Install Folder]
+# #(0)Include
+# #copy include folder in dev version to [Msys Install Folder]/local/
+# #(1)Lib
+# #copy lib folder in dev version to [Msys Install Folder]/local/
+# #(2)Dll
+# #copy all the file (*.dll and *.exe) in shared version to [MinGW Install Folder]/bin/
+# #
 echo "============================================="
-echo "simplest ffmpeg demos list ---- g++ compile all"
+echo "simplest ffmpeg demos list ---- MinGW compile all"
 echo "Lei Xiaohua"
 echo "Communication University of China / Digital TV Technology"
 echo "leixiaohua1020@126.com"
