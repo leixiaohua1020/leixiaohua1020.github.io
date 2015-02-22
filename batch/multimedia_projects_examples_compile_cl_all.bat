@@ -7,103 +7,24 @@
 ::Communication University of China / Digital TV Technology
 ::http://blog.csdn.net/leixiaohua1020
 ::
-::该脚本用于批量编译[最简单的基于FFmpeg的示例程序合集]的代码。
-::使用CL作为编译器
-::[最简单的基于FFmpeg的示例程序合集]目前包含下列项目: 
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg player            | 最简单的基于FFMPEG的视频播放器
-::  包括了如下几个子工程: 
-::    simplest_ffmpeg_player:          标准版，FFmpeg学习的开始。
-::    simplest_ffmpeg_player_su:       SU（SDL Update）版，加入了简单的SDL的Event。
-::    simplest_ffmpeg_decoder_pure:    一个纯净的解码器只使用libavcodec（没有使用libavformat）。
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg audio player      | 最简单的基于FFMPEG的音频播放器
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg picture encoder   | 最简单的基于FFMPEG的图像编码器
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg video encoder     | 最简单的基于FFMPEG的视频编码器
-::  包括了如下几个子工程: 
-::    simplest_ffmpeg_video_encoder:   普通版编码器。使用libavcodec和libavformat编码并且封装视频。
-::    simplest_ffmpeg_video_encoder_pure: 纯净版编码器。仅使用libavcodec编码视频，不使用libavformat。
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg audio encoder     | 最简单的基于FFMPEG的音频编码器
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg format            | 最简单的基于FFMPEG的封装格式处理
-::  包括了如下几个子工程: 
-::    simplest_ffmpeg_demuxer:         视音频分离器。
-::    simplest_ffmpeg_demuxer_simple:  视音频分离器（简化版）。
-::    simplest_ffmpeg_muxer:           视音频复用器。
-::    simplest_ffmpeg_remuxer:         封装格式转换器。
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg streamer          | 最简单的基于FFmpeg的推流器（推送RTMP）
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg video filter      | 最简单的基于FFmpeg的AVfilter例子（水印叠加）
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg swscale           | 最简单的基于FFmpeg的libswscale的示例
-::  包括了如下几个子工程: 
-::    simplest_ffmpeg_swscale:         最简单的libswscale的教程。
-::    simplest_pic_gen:                生成各种测试图片的工具。
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg device            | 最简单的基于FFmpeg的AVDevice例子
-::  包括了如下几个子工程: 
-::    simplest_ffmpeg_grabdesktop:     屏幕录制。
-::    simplest_ffmpeg_readcamera:      读取摄像头。
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg mem handler       | 最简单的基于FFmpeg的内存读写例子
-::  包括了如下几个子工程: 
-::    simplest_ffmpeg_mem_player:      播放内存中视频数据的播放器。
-::    simplest_ffmpeg_mem_transcoder:  转码内存中数据的转码器。
+::该脚本使用cl.exe批量编译[多媒体项目示例程序合集]的代码。
+::[多媒体项目示例程序合集]目前包含下列项目：
+::  simplest media play:          最简单的使用各种API（Direct3D，OpenGL，GDI，
+::                                DirectSound，SDL2）播放多媒体的例子
+::  simplest encoder:             最简单的视频编码器例子
+::  simplest libRTMP example:     最简单的基于libRTMP的使用示例
+::  simplest libVLC example:      最简单的基于libVLC的示例程序
+::  simplest directshow example:  最简单的基于DirectShow的示例
 ::
-::=====================================================================================
-::
-::
-::This Batch file is used to compile all the source code of 
-::[simplest ffmpeg demos list]. It uses CL as compiler.
-::[simplest ffmpeg demos list] contains following projects:
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg player
-::  It contains following projects:
-::    simplest_ffmpeg_player:          Standard Version, suitable for biginner.
-::    simplest_ffmpeg_player_su:       SU（SDL Update）Version, Add SDL Event.
-::    simplest_ffmpeg_decoder_pure:    A pure decoder.It only uses libavcodec (without libavformat).
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg audio player
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg picture encoder
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg video encoder
-::  It contains following projects:
-::    simplest_ffmpeg_video_encoder:   A video encoder. It uses libavcodec and libavformat.
-::    simplest_ffmpeg_video_encoder_pure: Pure video encoder. It only uses libavcodec (without libavformat).
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg audio encoder
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg format
-::  It contains following projects:
-::    simplest_ffmpeg_demuxer:         Split Audio and Video bitstreams.
-::    simplest_ffmpeg_demuxer_simple:  Split Audio and Video bitstreams.
-::    simplest_ffmpeg_muxer:           Put Audio and Video bitstreams together.
-::    simplest_ffmpeg_remuxer:         Change Container Fomat of Video file.
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg streamer
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg video filter
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg swscale
-::  It contains following projects:
-::    simplest_ffmpeg_swscale:         Convert pixel data's format (from YUV420P to RGB24)
-::    simplest_pic_gen:                Generate some test pictures (Gray Bar, Color Bar ...)
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg device
-::  It contains following projects:
-::    simplest_ffmpeg_grabdesktop:     Screen Capture.
-::    simplest_ffmpeg_readcamera:      Read Camera.
-::-------------------------------------------------------------------------------------
-::  *simplest ffmpeg mem handler
-::  It contains following projects:
-::    simplest_ffmpeg_mem_player:      Video Player that play video data in memory.
-::    simplest_ffmpeg_mem_transcoder:  Video Converter that convert video data in memory.
-::=====================================================================================
+::This Batch file uses CL.exe to compile all the source code of 
+::[multimedia projects examples list].
+::[multimedia projects examples list] contains following projects:
+::  simplest media play:          Examples about video/audio's playing
+::  simplest encoder:             Examples about video encoders
+::  simplest libRTMP example:     Examples about usage of libRTMP
+::  simplest libVLC example:      Examples about libVLC
+::  simplest directshow example:  Simple Examples about DirectShow
+
 @echo off
 echo ---------------------------------------------
 echo simplest ffmpeg demos list ---- CL compile all

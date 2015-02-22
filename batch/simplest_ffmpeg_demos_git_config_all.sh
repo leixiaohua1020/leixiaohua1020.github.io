@@ -1,6 +1,6 @@
 #! /bin/sh
-#最简单的基于FFmpeg示例程序合集 ---- Git批量上传脚本
-#simplest ffmpeg demos list ---- git push all
+#最简单的基于FFmpeg示例程序合集 ---- Git批量设置脚本
+#simplest ffmpeg demos list ---- git config all
 #
 #雷霄骅 Lei Xiaohua
 #leixiaohua1020@126.com
@@ -8,7 +8,7 @@
 #Communication University of China / Digital TV Technology
 #http://blog.csdn.net/leixiaohua1020
 #
-#该脚本用于批量上传[最简单的基于FFmpeg的示例程序合集]的代码。
+#该脚本用于批量设置[最简单的基于FFmpeg的示例程序合集]的代码的一些属性。
 #[最简单的基于FFmpeg的示例程序合集]目前包含下列项目：
 #  simplest ffmpeg player:          最简单的基于FFmpeg的视频播放器
 #  simplest ffmpeg audio player:    最简单的基于FFmpeg的音频播放器
@@ -22,7 +22,7 @@
 #  simplest ffmpeg video filter:    最简单的基于FFmpeg的AVfilter例子（水印叠加）
 #  simplest ffmpeg swscale:         最简单的基于FFmpeg的libswscale的示例
 #
-#This Batch file is used to push all the source code of 
+#This Batch file is used to set some attributes of all the source code of 
 #[simplest ffmpeg demos list].
 #[simplest ffmpeg demos list] contains following projects:
 #  simplest ffmpeg player:          The simplest video player based on FFmpeg
@@ -38,83 +38,59 @@
 #  simplest ffmpeg swscale:         Examples about handle pixel data using libswscale in FFmpeg
 
 echo "============================================="
-echo "simplest ffmpeg demos list ---- git push all"
+echo "simplest ffmpeg demos list ---- git config all"
 echo "Lei Xiaohua"
 echo "Communication University of China / Digital TV Technology"
 echo "leixiaohua1020@126.com"
 echo "http://blog.csdn.net/leixiaohua1020"
 echo "============================================="
 
-#vars
-commitstr="multi-platform"
-remotestr="origin master"
-#remotestr="osc master"
-#remotestr="github master"
-#remotestr="origin"
 
-#git push
+cmd1="git config core.ignorecase false"
+
 cd simplest_ffmpeg_player
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_audio_player
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_picture_encoder
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_video_encoder
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_audio_encoder
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_streamer
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_mem_handler
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_device
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_format
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_video_filter
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
 
 cd simplest_ffmpeg_swscale
-git add --all .
-git commit -m ${commitstr}
-git push ${remotestr}
+$cmd1
 cd ..
+
+
+

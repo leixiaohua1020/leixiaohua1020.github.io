@@ -67,5 +67,38 @@ git clone https://git.oschina.net/leixiaohua1020/simplest_libvlc_example.git sim
 git clone https://git.oschina.net/leixiaohua1020/simplest_directshow_example.git simplest_directshow_example
 fi
 
+#set remote
+cd simplest_media_play
+git remote rm origin 
+git remote add origin git://git.code.sf.net/p/simplestmediaplay/code
+git remote add github https://github.com/leixiaohua1020/simplest_media_play.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_media_play.git
+cd ..
 
+cd simplest_encoder
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestencoder/code
+git remote add github https://github.com/leixiaohua1020/simplest_encoder.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_encoder.git
+cd ..
 
+cd simplest_librtmp_example
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestlibrtmpexample/code
+git remote add github https://github.com/leixiaohua1020/simplest_librtmp_example.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_librtmp_example.git
+cd ..
+
+cd simplest_libvlc_example
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestlibvlcexample/code
+git remote add github https://github.com/leixiaohua1020/simplest_libvlc_example.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_libvlc_example.git
+cd ..
+
+cd simplest_directshow_example
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestdirectshowexample/code
+git remote add github https://github.com/leixiaohua1020/simplest_directshow_example.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_directshow_example.git
+cd ..

@@ -97,3 +97,81 @@ git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_format.git simp
 git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_video_filter.git simplest_ffmpeg_video_filter
 git clone https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_swscale.git simplest_ffmpeg_swscale
 fi
+
+#set remote
+cd simplest_ffmpeg_player
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegplayer/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_player.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_player.git
+cd ..
+
+cd simplest_ffmpeg_audio_player
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegaudioplayer/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_audio_player.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_audio_player.git
+cd ..
+
+cd simplest_ffmpeg_picture_encoder
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegpictureencoder/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_picture_encoder.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_picture_encoder.git
+cd ..
+
+cd simplest_ffmpeg_video_encoder
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegvideoencoder/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_video_encoder.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_video_encoder.git
+cd ..
+
+cd simplest_ffmpeg_audio_encoder
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegaudioencoder/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_audio_encoder.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_audio_encoder.git
+cd ..
+
+cd simplest_ffmpeg_streamer
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegstreamer/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_streamer.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_streamer.git
+cd ..
+
+cd simplest_ffmpeg_mem_handler
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegmemhandler/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_mem_handler.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_mem_handler.git
+cd ..
+
+cd simplest_ffmpeg_device
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegdevice/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_device.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_device.git
+cd ..
+
+cd simplest_ffmpeg_format
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegformat/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_format.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_format.git
+cd ..
+
+cd simplest_ffmpeg_video_filter
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegvideofilter/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_video_filter.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_video_filter.git
+cd ..
+
+cd simplest_ffmpeg_swscale
+git remote rm origin
+git remote add origin git://git.code.sf.net/p/simplestffmpegswscale/code
+git remote add github https://github.com/leixiaohua1020/simplest_ffmpeg_swscale.git
+git remote add osc https://git.oschina.net/leixiaohua1020/simplest_ffmpeg_swscale.git
+cd ..
