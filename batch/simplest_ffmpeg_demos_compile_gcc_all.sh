@@ -162,6 +162,12 @@ echo "leixiaohua1020@126.com"
 echo "http://blog.csdn.net/leixiaohua1020"
 echo "============================================="
 #=====================================================================================
+#OS kernel
+kernel=$(uname -s)
+
+#change the access permissions (--recursive)
+chmod -R 777 ./
+
 echo ""
 echo "Compile simplest_ffmpeg_player..."
 cd simplest_ffmpeg_player
@@ -229,7 +235,11 @@ echo ""
 echo "Compile simplest_ffmpeg_mem_handler..."
 cd simplest_ffmpeg_mem_handler
 cd simplest_ffmpeg_mem_player
+if [ "$kernel" == "Darwin" ];then
+sh compile_gcc_mac.sh
+else
 sh compile_gcc.sh
+fi
 cd ..
 cd simplest_ffmpeg_mem_transcoder
 sh compile_gcc.sh
@@ -241,10 +251,18 @@ echo ""
 echo "Compile simplest_ffmpeg_device..."
 cd simplest_ffmpeg_device
 cd simplest_ffmpeg_grabdesktop
+if [ "$kernel" == "Darwin" ];then
+sh compile_gcc_mac.sh
+else
 sh compile_gcc.sh
+fi
 cd ..
 cd simplest_ffmpeg_readcamera
+if [ "$kernel" == "Darwin" ];then
+sh compile_gcc_mac.sh
+else
 sh compile_gcc.sh
+fi
 cd ..
 cd ..
 
@@ -271,7 +289,11 @@ echo ""
 echo "Compile simplest_ffmpeg_video_filter..."
 cd simplest_ffmpeg_video_filter
 cd simplest_ffmpeg_video_filter
+if [ "$kernel" == "Darwin" ];then
+sh compile_gcc_mac.sh
+else
 sh compile_gcc.sh
+fi
 cd ..
 cd ..
 
