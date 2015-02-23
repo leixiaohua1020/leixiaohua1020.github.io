@@ -115,26 +115,26 @@
 # #Change "yasmXXXX.exe" name to "yasm.exe"
 # #Copy yasm.exe to [MinGW Install Folder]/bin/
 # #Install SDL
-# #Visit SDL official site: http://www.libsdl.org/, download source code
+# #Visit SDL official site, download source code
 # #cd to source code folder
 # ./configure
 # make
 # make install
 # #Compile libx264
-# #Visit x264 official site: http://www.videolan.org/developers/x264.html, download source code
+# #Visit x264 official site, download source code
 # #cd to source code folder
 # ./configure
 # make
 # make install
 # #Compile libfaac 
-# #Visit libfaac official site: http://www.audiocoding.com/faac.html, download source code
+# #Visit libfaac official site, download source code
 # #cd to source code folder
 # ./configure
 # make
 # make install
 #
 # #(1)Compile FFmpeg
-# #Visit ffmpeg official site: http://ffmpeg.org/, download source code.
+# #Visit ffmpeg official site, download source code.
 # #or use Git:
 # git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
 # cd ffmpeg
@@ -143,7 +143,7 @@
 # make install
 #
 # #(2)Compile SDL2 (Some projects needed)
-# #Visit SDL official site:http://www.libsdl.org/, download source code
+# #Visit SDL official site, download source code
 # #cd to source code folder
 # ./configure
 # make

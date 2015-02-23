@@ -115,7 +115,7 @@ echo ---------------------------------------------
 ::=====================================================================================
 
 echo.
-echo Compile simplest_ffmpeg_player...
+echo Run simplest_ffmpeg_player...
 cd simplest_ffmpeg_player
 cd simplest_ffmpeg_player
 start /wait simplest_ffmpeg_player.exe
@@ -130,7 +130,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_audio_player...
+echo Run simplest_ffmpeg_audio_player...
 cd simplest_ffmpeg_audio_player
 cd simplest_ffmpeg_audio_player
 start /wait simplest_ffmpeg_audio_player.exe
@@ -139,7 +139,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_picture_encoder...
+echo Run simplest_ffmpeg_picture_encoder...
 cd simplest_ffmpeg_picture_encoder
 cd simplest_ffmpeg_picture_encoder
 start /wait simplest_ffmpeg_picture_encoder.exe
@@ -148,7 +148,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_video_encoder...
+echo Run simplest_ffmpeg_video_encoder...
 cd simplest_ffmpeg_video_encoder
 cd simplest_ffmpeg_video_encoder
 start /wait simplest_ffmpeg_video_encoder.exe
@@ -160,7 +160,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_audio_encoder...
+echo Run simplest_ffmpeg_audio_encoder...
 cd simplest_ffmpeg_audio_encoder
 cd simplest_ffmpeg_audio_encoder
 start /wait simplest_ffmpeg_audio_encoder.exe
@@ -169,7 +169,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_streamer...
+echo Run simplest_ffmpeg_streamer...
 cd simplest_ffmpeg_streamer
 cd simplest_ffmpeg_streamer
 start /wait simplest_ffmpeg_streamer.exe
@@ -178,7 +178,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_mem_handler...
+echo Run simplest_ffmpeg_mem_handler...
 cd simplest_ffmpeg_mem_handler
 cd simplest_ffmpeg_mem_player
 start /wait simplest_ffmpeg_mem_player.exe
@@ -190,7 +190,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_device...
+echo Run simplest_ffmpeg_device...
 cd simplest_ffmpeg_device
 cd simplest_ffmpeg_grabdesktop
 start /wait simplest_ffmpeg_grabdesktop.exe
@@ -202,7 +202,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_format...
+echo Run simplest_ffmpeg_format...
 cd simplest_ffmpeg_format
 cd simplest_ffmpeg_demuxer
 start /wait simplest_ffmpeg_demuxer.exe
@@ -220,7 +220,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_video_filter...
+echo Run simplest_ffmpeg_video_filter...
 cd simplest_ffmpeg_video_filter
 cd simplest_ffmpeg_video_filter
 start /wait simplest_ffmpeg_video_filter.exe
@@ -229,7 +229,7 @@ cd ..
 
 ::=====================================================================================
 echo.
-echo Compile simplest_ffmpeg_swscale...
+echo Run simplest_ffmpeg_swscale...
 cd simplest_ffmpeg_swscale
 cd simplest_ffmpeg_swscale
 start /wait simplest_ffmpeg_swscale.exe
