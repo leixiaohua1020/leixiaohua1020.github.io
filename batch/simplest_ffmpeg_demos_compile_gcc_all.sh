@@ -111,12 +111,12 @@
 # ~~~~~~~~~~~~~~Linux[Compile]~~~~~~~~~~~~~~
 # #(0)Enter SuperUser
 # su
-# #(1)Install G++
+# #(1)Install Compiler
 # apt-get install g++  #[Debian/Ubuntu]
-# yum install g++      #[RedHat/Fedora/CentOS]
+# yum install autoconf automake gcc gcc-c++ nasm pkgconfig zlib-devel #[RedHat/Fedora/CentOS]
 # #(2)Install FFmpeg Dependencies
 # apt-get -y install yasm libfaac-dev libx264-dev libsdl1.2-dev  #[Debian/Ubuntu]
-# yum -y install yasm libfaac-dev libx264-dev libsdl1.2-dev      #[RedHat/Fedora/CentOS]
+# Compile libfaac libx264 one by one                             #[RedHat/Fedora/CentOS]
 # #(3)Compile FFmpeg
 # git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
 # cd ffmpeg
