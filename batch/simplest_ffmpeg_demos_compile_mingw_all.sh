@@ -111,28 +111,9 @@
 # ~~~~~~~~~~~~~~~~~~[Compile]~~~~~~~~~~~~~~~~~~
 # #(0)Compile FFmpeg Dependencies
 # #Install yasm
-# #Visit yasm official site, download the yasmXXXX.exe
-# #Change "yasmXXXX.exe" name to "yasm.exe"
-# #Copy yasm.exe to [MinGW Install Folder]/bin/
 # #Install SDL
-# #Visit SDL official site, download source code
-# #cd to source code folder
-# ./configure
-# make
-# make install
 # #Compile libx264
-# #Visit x264 official site, download source code
-# #cd to source code folder
-# ./configure --enable-shared
-# make
-# make install
 # #Compile libfaac 
-# #Visit libfaac official site, download source code
-# #cd to source code folder
-# ./configure --enable-shared
-# make
-# make install
-#
 # #(1)Compile FFmpeg
 # #Visit ffmpeg official site, download source code.
 # #or use Git:
