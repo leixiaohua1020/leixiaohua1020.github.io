@@ -117,7 +117,10 @@ It contains 3 project:  </p>
 <ul>
 <li>simplest_ffmpeg_player: Standard Version, suitable for biginner.</li>
 <li>simplest_ffmpeg_player_su: SU（SDL Update）Version, Add SDL Event.</li>
-<li>simplest_ffmpeg_decoder_pure: A pure decoder.</li>
+<li>simplest_ffmpeg_decoder: A decoder that can demux container format. Uses libavcodec and libavformat.</li>
+<li>simplest_ffmpeg_decoder_pure: A pure decoder. Only use libavcodec (Without libavformat).</li>
+<li>simplest_video_play_sdl2. Example about using SDL2 play YUV data.</li>
+<li>simplest_ffmpeg_helloworld: Output informations about FFmpeg libraries.</li>
 </ul>
 
 <p>Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_player">https://github.com/leixiaohua1020/simplest_ffmpeg_player</a></p>
@@ -126,7 +129,15 @@ It contains 3 project:  </p>
 <a id="simplest-ffmpeg-audio-player" class="anchor" href="#simplest-ffmpeg-audio-player" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simplest ffmpeg audio player</h3>
 
 <p><em>The simplest audio player based on FFmpeg</em><br>
-Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_audio_player">https://github.com/leixiaohua1020/simplest_ffmpeg_audio_player</a></p>
+It contains 3 project:  </p>
+
+<ul>
+<li>simplest_ffmpeg_audio_player: Audio player based on FFmpeg and SDL.</li>
+<li>simplest_ffmpeg_audio_decoder: Audio decoder. Uses libavcodec and libavformat.</li>
+<li>simplest_audio_play_sdl2: Example about using SDL2 play PCM data.</li>
+</ul>
+
+<p>Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_audio_player">https://github.com/leixiaohua1020/simplest_ffmpeg_audio_player</a></p>
 
 <h3>
 <a id="simplest-ffmpeg-pic-encoder" class="anchor" href="#simplest-ffmpeg-pic-encoder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simplest ffmpeg pic encoder</h3>
@@ -157,7 +168,14 @@ Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_audio_e
 <a id="simplest-ffmpeg-streamer" class="anchor" href="#simplest-ffmpeg-streamer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simplest ffmpeg streamer</h3>
 
 <p><em>The simplest streamer based on FFmpeg</em><br>
-Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_streamer">https://github.com/leixiaohua1020/simplest_ffmpeg_streamer</a></p>
+It contains 2 project:  </p>
+
+<ul>
+<li>simplest_ffmpeg_streamer: stream local media files to streaming media server.</li>
+<li>simplest_ffmpeg_receiver: save streaming media to a file.</li>
+</ul>
+
+<p>Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_streamer">https://github.com/leixiaohua1020/simplest_ffmpeg_streamer</a></p>
 
 <h3>
 <a id="simplest-ffmpeg-mem-handler" class="anchor" href="#simplest-ffmpeg-mem-handler" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simplest ffmpeg mem handler</h3>
@@ -211,6 +229,38 @@ Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_video_f
 
 <p><em>Examples about handle pixel data using libswscale in FFmpeg</em><br>
 Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_swscale">https://github.com/leixiaohua1020/simplest_ffmpeg_swscale</a></p>
+
+<h3>
+<a id="simplest-ffmpeg-avutil" class="anchor" href="#simplest-ffmpeg-avutil" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simplest FFmpeg AVUtil</h3>
+
+<p><em>Example about FFmpeg's libavutil</em><br>
+Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_avutil">https://github.com/leixiaohua1020/simplest_ffmpeg_avutil</a></p>
+
+<h3>
+<a id="simplest-ffmpeg-mobile" class="anchor" href="#simplest-ffmpeg-mobile" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simplest ffmpeg Mobile</h3>
+
+<p><em>ffmpeg examples in Android / IOS</em><br>
+This project contains examples about handling multi-media data based on FFmpeg on mobile device.</p>
+
+<ul>
+<li>[Android]</li>
+<li>simplest_android_player: Video player based on Android API</li>
+<li>simplest_ffmpeg_android_helloworld: Simplest HelloWorld program based on FFmpeg in Android.</li>
+<li>simplest_ffmpeg_android_decoder: Simplest decoder based on FFmpeg in Android.</li>
+<li>simplest_ffmpeg_android_decoder_onelib: Simplest decoder based on FFmpeg in Android - One Library.</li>
+<li>simplest_ffmpeg_android_streamer: Simplest streamer based on FFmpeg in Android.</li>
+<li>simplest_ffmpeg_android_transcoder: Transcoder transplant from ffmpeg.c in Android.</li>
+<li>simplest_sdl_android_helloworld: Simplest program based on SDL in Android.</li>
+<li>[IOS]</li>
+<li>simplest_ios_player: Video player based on IOS API</li>
+<li>simplest_ffmpeg_ios_helloworld: Simplest HelloWorld program based on FFmpeg in IOS.</li>
+<li>simplest_ffmpeg_ios_decoder: Simplest decoder based on FFmpeg in IOS.</li>
+<li>simplest_ffmpeg_ios_streamer: Simplest streamer based on FFmpeg in IOS.</li>
+<li>simplest_ffmpeg_ios_transcoder: Transcoder transplant from ffmpeg.c in IOS.</li>
+<li>simplest_sdl_ios_helloworld: Simplest program based on SDL in IOS.</li>
+</ul>
+
+<p>Project Page: <a href="https://github.com/leixiaohua1020/simplest_ffmpeg_mobile">https://github.com/leixiaohua1020/simplest_ffmpeg_mobile</a></p>
 
 <hr>
 
@@ -327,7 +377,7 @@ Project Page: <a href="https://github.com/leixiaohua1020/h264_analysis">https://
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
